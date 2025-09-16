@@ -1,0 +1,29 @@
+#title {
+    background-color: green;
+    width: 100%;
+    height: 50px;
+    margin: 0;
+    font-size: 30px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+#title > a{
+    margin-left: 30px;
+    padding: 5px 50px 0px 50px
+}
+
+body {
+    margin: 0;
+}
+
+#title > a:link {
+    text-decoration: none;
+    color: white;
+}
+
+#title > a:visited {
+    text-decoration: none;
+    color: white;
+}
