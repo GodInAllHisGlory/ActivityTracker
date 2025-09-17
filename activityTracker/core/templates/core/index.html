@@ -5,12 +5,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{% static 'core/header.css' %}">
+    <link rel="stylesheet" href="{% static 'core/activityCard.css' %}">
     <title>Activity Tracker</title>
 </head>
     <body>
         <div id="title">
-            <a href="">Activity Tracker</a>
+            <a href="/">Activity Tracker</a>
             <a href="new_activity">New Activity</a>
+        </div>
+        <div id="activities-container">
+            {% if activities %}
+                {% for activity in activities %}
+                    <div class="activity">
+                        <div class="link-container">
+                            <a href="activity/{{ activity.id }}">{{ activity.name }}</a>
+                        </div>
+                        <div class="time-container">
+                            <p>Time Spent: {{ activity.activityTime }}</p>
+                        </div>
+                    </div>
+                {% endfor %}
+            {% else %}
+                <p>No activities to display</p>
+            {% endif %}
         </div>
     </body>
 </html>
