@@ -4,6 +4,9 @@ from django.db import models
 class Activity(models.Model):
     id = models.BigAutoField(primary_key=True)
     name = models.TextField()
+    
+    def activityTime(self):
+        return "Infinity Hours?!?!?!?"
 
 class TimeLog(models.Model):
     id = models.BigAutoField(primary_key=True)
