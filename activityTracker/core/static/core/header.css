@@ -6,13 +6,9 @@
     font-size: 30px;
     color: white;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
-#title > a{
-    margin-left: 30px;
-    padding: 5px 50px 0px 50px
-}
 
 body {
     margin: 0;

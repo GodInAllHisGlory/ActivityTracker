@@ -1,0 +1,45 @@
+#activities-container {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    padding: 10px;
+}
+
+.activity {
+    margin: 10px;
+    transition: 0.3s;
+    box-shadow: 10px 10px 5px gray;
+}
+
+.activity:hover {
+    transition: 0.3s;
+    box-shadow: 15px 15px 15px gray;
+    
+}
+
+.link-container {
+    background-color: green;
+    color: white;
+    padding: 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.time-container {
+    background-color: white;
+    color: black;
+    padding: 1px;
+}
+
+.link-container > a {
+    text-decoration: underline;
+    font-size: 32px;
+}
+
+.link-container > a:link {
+    color: white;
+}
+
+.link-container > a:visited {
+    color: white;
+}
