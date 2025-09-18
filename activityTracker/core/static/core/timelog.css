@@ -1,0 +1,25 @@
+#timelog {
+    margin: 20px;
+}
+
+#timelog-input {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 300px;
+    border: 1px solid;
+    border-radius: 15px;
+}
+
+#timelog-input > label {
+    margin: 5px;
+}
+
+#timelog-input > label > input {
+    width: 170px;
+}
+
+#save {
+    width: 50px;
+    margin-top: 10px;
+}

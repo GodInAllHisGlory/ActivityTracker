@@ -5,11 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{% static 'core/header.css' %}">
+    <link rel="stylesheet" href="{% static 'core/timelog.css' %}">
     <title>New Timelog</title>
 </head>
     <body>
         <div id="title">
-        <a href="/">Activity Tracker</a>
-    </div>
+            <a href="/">Activity Tracker</a>
+        </div>
+        <div id="timelog">
+            <h1> Add a new time log for {{ activity.name }}</h1>
+            <form id="timelog-input" action="/create_timelog/{{ activity.id }}/" method="post">
+                <label> Time Started: 
+                    <input type="datetime-local" name="start-time">
+                </label>
+                <label> Time Ended: 
+                    <input type="datetime-local" name="end-time">
+                </label>
+                <button id="save">Save</button>
+            </form>
+        </div>
     </body>
 </html>
