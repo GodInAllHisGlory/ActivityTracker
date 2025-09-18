@@ -14,6 +14,10 @@ def activity(req: HttpRequest, id):
 def new_activity(req: HttpRequest):
     return render(req, "core/new_activity.html")
 
+def new_timelog(req: HttpRequest, id):
+    print(id)
+    return render(req, "core/new_timelog.html")
+
 def create_activity(req: HttpRequest):
     query = req.POST
     name = query.get("name", "New Activity")
@@ -22,4 +26,5 @@ def create_activity(req: HttpRequest):
     )
     activity.save()
     return redirect("/")
+
 
