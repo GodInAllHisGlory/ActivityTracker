@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{% static 'core/header.css' %}">
+    <link rel="stylesheet" href="{% static 'core/newActivity.css' %}">
     <title>New Activity</title>
 </head>
 <body>
@@ -12,12 +13,14 @@
         <a href="/">Activity Tracker</a>
     </div>
     <h3>Name your activity here!</h3>
-    <form action="/create_activity/" method="post">
-        <label>
-        Name:
-        <input type="text" name="name" id="input-name">
-        </label>
-        <button id="create-activity">Create Activity</button>
-    </form>
+    <div id="form-container">
+        <form action="/create_activity/" method="post">
+            <label>
+            Name:
+            <input type="text" name="name" id="input-name">
+            </label>
+            <button id="create-activity">Create Activity</button>
+        </form>
+    </div>
 </body>
 </html>
