@@ -13,5 +13,19 @@
         <a href="new_timelog">New Timelog</a>
     </div>
     <h1>{{ activity.name }}</h1>
+    <table>
+        <tr>
+            <th>Start Date</th>
+            <th>End Date</th>
+            <th>Time Spent</th>
+        </tr>
+        {% for log in timelogs %}
+        <tr>
+            <td>{{ log.start_time }}</td>
+            <td>{{ log.end_time }}</td>
+            <td>{{ log.time_spent }}</td>
+        </tr>
+        {% endfor %}
+    </table>
 </body>
 </html>
