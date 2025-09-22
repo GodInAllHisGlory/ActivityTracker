@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect
-from django.http import HttpRequest, JsonResponse
+from django.http import HttpRequest
 from .models import Activity, TimeLog
 from datetime import datetime
 
