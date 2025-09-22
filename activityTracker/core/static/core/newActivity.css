@@ -1,0 +1,21 @@
+#form-container {
+    border: 1px solid;
+    border-radius: 10px;
+    display: inline-block;
+    margin: 20px;
+}
+
+#form-container > form {
+    display: grid;
+    margin: 20px;
+}
+
+#create-activity {
+    margin-top: 5px;
+    margin-left: 85px;
+    width: 125px;
+}
+
+h3 {
+    margin: 20px;
+}

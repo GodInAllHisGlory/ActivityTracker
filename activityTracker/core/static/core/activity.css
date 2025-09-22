@@ -1,0 +1,23 @@
+#timelog-container {
+    margin-left: 10px;
+    border:solid;
+    border-radius: 7px;
+    display: inline-block;
+}
+
+#timelog-table {
+    border-collapse: collapse;
+    margin: 5px;
+}
+
+#title-name {
+    margin-left: 10px;
+}
+
+td {
+    padding-right: 30px;
+}
+
+tr:nth-child(even) {
+    background-color: lightgreen;
+}

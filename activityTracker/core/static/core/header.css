@@ -4,7 +4,7 @@
     height: 50px;
     font-size: 30px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 body {

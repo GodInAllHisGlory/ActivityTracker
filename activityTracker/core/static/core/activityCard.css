@@ -2,13 +2,16 @@
     display: flex;
     justify-content: flex-start;
     flex-direction: row;
+    flex-wrap: wrap;
     padding: 10px;
+    margin-left: 40px;
 }
 
 .activity {
     margin: 10px;
     transition: 0.3s;
     box-shadow: 10px 10px 5px gray;
+    width: 325px;
 }
 
 .activity:hover {
@@ -27,7 +30,7 @@
 .time-container {
     background-color: white;
     color: black;
-    padding: 1px;
+    padding: 10px;
 }
 
 .link-container > a {
